@@ -9,6 +9,7 @@
 - [Project Description](#-Project-Description)
 - [The technologies used](#-The-Technologies-used)
 - [How to execute the project](#-How-to-execute-the-project)
+- [To Do](#-To-Do)
 - [Author](#-Author)
 
 ---
@@ -25,6 +26,11 @@ The follow tools were used in this project:
 * CSS3
 * JavaScript
 * Jquery (owl-carousel)
+
+---
+<a name="-To-Do"></a>
+## ⚠️ To Do 
+[] develop the carousel in Vanilla JS
 
 ---
 <a name="-How-to-execute-the-project"></a>
