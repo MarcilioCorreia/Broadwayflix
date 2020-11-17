@@ -16,3 +16,41 @@
     width: 65%;
   }
 }
+
+/* Media Queries Carousel */
+@media screen and (max-width: 800px) {
+  /*
+  header .logotipo {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-show {
+    font-size: 14px;
+  }
+
+  .main-show .description {
+    max-width: 100%;
+  }
+}*/
+  .highest-shows .carousel-container {
+    overflow: visible;
+  }
+
+  .highest-shows .carousel-container .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .highest-shows .guides,
+  .highest-shows .left-arrow,
+  .highest-shows .right-arrow {
+    display: none;
+  }
+}
