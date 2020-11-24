@@ -23,8 +23,7 @@
 The follow tools were used in this project:
 * HTML5
 * CSS3
-* JavaScript
-* Jquery (owl-carousel)
+* Vanilla JavaScript
 
 ---
 <a name="-How-to-execute-the-project"></a>
