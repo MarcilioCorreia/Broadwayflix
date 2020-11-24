@@ -33,7 +33,7 @@ The follow tools were used in this project:
 # Cloning the repository
 git clone https://github.com/marciliocorreia/Broadwayflix
 
-# Execute the HTML (You can change the Array if you need)
+# Execute the HTML
 It will be necessary to open your browser and access: `http://localhost:5500/`
 ```
 
