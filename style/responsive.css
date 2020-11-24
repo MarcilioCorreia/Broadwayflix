@@ -1,56 +1,61 @@
 @media screen and (max-width: 700px) {
-  header .container {
+  body {
+    background: linear-gradient(
+      172deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 41%,
+      rgba(229, 9, 20, 0.7875525210084033) 100%
+    );
+  }
+
+  header .banner {
     display: flex;
     flex-direction: column;
   }
 
+  .main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    width: 150%;
+  }
+
   .btn {
-    margin-top: 3px;
+    margin-top: 1px;
     width: 200px;
     height: 40px;
   }
+
+  .btn2 {
+    margin-top: 5px;
+  }
+
+  .highest-grossing .carousel-container .carousel .show img {
+    height: 200px;
+  }
+
+  .highest-grossing .main-container .left-arrow,
+  .highest-grossing .main-container .right-arrow {
+    font-size: 30px;
+    height: 25%;
+    line-height: 20px;
+  }
+
+  .highest-grossing .carousel-container .carousel .show {
+    min-width: 30%;
+  }
 }
 
-@media screen and (min-width: 1000px) {
+@media (max-width: 1024px) and (min-width: 700px) {
+  .highest-grossing .carousel-container .carousel .show {
+    min-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .description {
     width: 65%;
-  }
-}
-
-/* Media Queries Carousel */
-@media screen and (max-width: 800px) {
-  /*
-  header .logotipo {
-    margin-bottom: 10px;
-    font-size: 30px;
-  }
-
-  header .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .main-show {
-    font-size: 14px;
-  }
-
-  .main-show .description {
-    max-width: 100%;
-  }
-}*/
-  .highest-shows .carousel-container {
-    overflow: visible;
-  }
-
-  .highest-shows .carousel-container .carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .highest-shows .guides,
-  .highest-shows .left-arrow,
-  .highest-shows .right-arrow {
-    display: none;
   }
 }

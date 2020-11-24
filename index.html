@@ -2,38 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" container="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/netflixIcon.png" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Responsiveness  -->
-    <link rel="stylesheet" href="style/responsive.css" />
-
     <title>BROADWAYFLIX</title>
   </head>
   <body>
     <header>
-      <div class="container-header">
+      <div class="banner">
         <a href="#"
           ><img src="./img/broadwayflixLogo.png" alt="Broadwayflix Logo"
         /></a>
         <nav>
-          <a href="#">Home</a>
-          <a href="#">Categories</a>
-          <a href="#">Tickets</a>
-          <a href="#">Wishlist</a>
-          <a href="#"><p class="profile"></p></a>
+          <ul>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li class="search-icon">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Title, People, Genres"
+              />
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main>
       <div class="main-movie">
-        <div class="container-poster">
+        <div class="banner">
           <h3 class="title">BROADWAY</h3>
           <p class="description">
             A Broadway theater is a venue with a capacity of over 500 theater
@@ -59,157 +68,94 @@
       </div>
     </main>
 
-    <div class="carousel-shows container">
-      <div class="control-title">
+    <div class="highest-grossing container">
+      <div class="category-title">
         <h3>Highest-Grossing Broadway Shows</h3>
-        <div class="guides"></div>
       </div>
 
       <div class="main-container">
-        <button role="button" id="left-arrow" class="left-arrow">
-          <i class="fas fa-chevron-circle-left"></i>
+        <button id="left-arrow" class="left-arrow" role="button">
+          <i class="fas fa-arrow-alt-circle-left"></i>
         </button>
 
         <div class="carousel-container">
           <div class="carousel">
             <div class="show">
-              <a
-                href="https://www.youtube.com/watch?v=ewOAsUWQJvo&ab_channel=AVROTROS"
-                target="_blank"
-              >
-                <img class="movie-box" src="img/mini8.png" alt="Lion King" />
-              </a>
+              <a href="#"><img src="img/mini8.png" alt="Lion King" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini1.jpg" alt="Wicked" />
-              </a>
+              <a href="#"> <img src="img/mini1.jpg" alt="Wicked" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini3.png"
-                  alt="The Phantom of the Opera"
-                />
-              </a>
+              <a href="#"
+                ><img src="img/mini3.png" alt="The Phantom of the Opera"
+              /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini6.jpg" alt="Mamma Mia!" />
-              </a>
+              <a href="#"><img src="img/mini6.jpg" alt="Mamma Mia!" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini4.png" alt="Chicago" />
-              </a>
+              <a href="#"><img src="img/mini4.png" alt="Chicago" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini5.png"
-                  alt="Les Misérables"
-                />
-              </a>
+              <a href="#"><img src="img/mini5.png" alt="Les Misérables" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini7.jpg" alt="Cats" />
-              </a>
-            </div>
-            <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini2.jpg" alt="Hamilton" />
-              </a>
+              <a href="#"> <img src="img/mini2.jpg" alt="Hamilton" /></a>
             </div>
           </div>
         </div>
 
-        <button role="button" id="right-arrow" class="right-arrow">
-          <i class="fas fa-chevron-circle-right"></i>
+        <button id="right-arrow" class="right-arrow" role="button">
+          <i class="fas fa-arrow-alt-circle-right"></i>
         </button>
       </div>
     </div>
-
-    <div class="carousel-shows container">
-      <div class="control-title">
+    <div class="highest-grossing container">
+      <div class="category-title-disney">
         <h3>Disney Broadway Shows</h3>
-        <div class="guides"></div>
       </div>
 
       <div class="main-container">
-        <button role="button" id="left-arrow" class="left-arrow">
-          <i class="fas fa-chevron-circle-left"></i>
+        <button id="left-disney" class="left-arrow" role="button">
+          <i class="fas fa-arrow-alt-circle-left"></i>
         </button>
 
-        <div class="carousel-container">
+        <div class="carousel-container carousel-disney">
           <div class="carousel">
             <div class="show">
-              <a
-                href="https://www.youtube.com/watch?v=-UL0CDMhjj4&ab_channel=AdrianoVargas"
-                target="_blank"
-              >
-                <img class="movie-box" src="img/mini9.jpg" alt="Aladdin" />
-              </a>
+              <a href="#"> <img src="img/mini9.jpg" alt="Aladdin" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini10.jpg"
-                  alt="Mary Poppins"
-                />
-              </a>
+              <a href="#"><img src="img/mini10.jpg" alt="Mary Poppins" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini11.jpg" alt="Tarzan" />
-                />
-              </a>
+              <a href="#"><img src="img/mini11.jpg" alt="Tarzan" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini12.jpg"
-                  alt="The Little Mermaid"
-                />
-              </a>
+              <a href="#">
+                <img src="img/mini12.jpg" alt="The Little Mermaid"
+              /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini13.png" alt="Frozen" />
-              </a>
+              <a href="#"><img src="img/mini13.png" alt="Frozen" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini14.jpg"
-                  alt="Beauty and the Beast"
-                />
-              </a>
+              <a href="#"
+                ><img src="img/mini14.jpg" alt="Beauty and the Beast"
+              /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img class="movie-box" src="img/mini15.jpg" alt="AIDA" />
-              </a>
+              <a href="#"> <img src="img/mini15.jpg" alt="AIDA" /></a>
             </div>
             <div class="show">
-              <a href="#" target="_blank">
-                <img
-                  class="movie-box"
-                  src="img/mini8.png"
-                  alt="The Lion King"
-                />
-              </a>
+              <a href="#"><img src="img/mini8.png" alt="The Lion King" /></a>
             </div>
           </div>
         </div>
 
-        <button role="button" id="right-arrow" class="right-arrow">
-          <i class="fas fa-chevron-circle-right"></i>
+        <button id="right-disney" class="right-arrow" role="button">
+          <i class="fas fa-arrow-alt-circle-right"></i>
         </button>
       </div>
     </div>
@@ -218,6 +164,6 @@
       src="https://kit.fontawesome.com/a517b7e9ec.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

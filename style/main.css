@@ -9,9 +9,8 @@
   box-sizing: border-box;
 }
 
-/* Main Elements */
+/* Basic Elements */
 body {
-  background: var(--black);
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 0%,
@@ -22,17 +21,25 @@ body {
   color: white;
 }
 
-header .container-header {
+header .banner {
   display: flex;
   /*flex-direction: row; it is default*/
+  margin: 1rem 0 1rem 2rem;
   align-items: center;
   justify-content: space-between;
 }
 
-img {
-  margin-top: 15px;
-  margin-left: 50px;
+img .banner {
+  margin-left: 5px;
   width: 350px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 header nav {
@@ -46,23 +53,42 @@ header nav a {
   text-decoration: none;
   color: rgba(245, 240, 240, 0.856);
   margin-right: 20px;
+  text-transform: uppercase;
 }
 
 header nav a:hover {
   color: #fff;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #fff;
 }
 
-.profile {
+.search-icon input {
+  background: rgba(245, 240, 240, 0.856);
+  width: 150px;
+  padding: 0px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  height: 25px;
+}
+
+.search-icon .icon {
+  height: 100%;
   width: 40px;
-  height: 40px;
-  background: url("/img/profile.png");
-  background-size: 40px, 40px;
-  display: block;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
-.profile:hover {
-  border: 1.5px solid white;
-  transition: 0.1s ease all;
+.search-icon .icon:hover {
+  background: #e20808;
+}
+
+.search-icon .icon span {
+  font-size: 16px;
 }
 
 /* Main Show */
@@ -81,14 +107,19 @@ header nav a:hover {
 }
 
 .main-movie .description {
-  margin: 10px 0 40px 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
   font-size: 20px;
-  background: rgba(0, 0, 0, 0.15);
-  width: 480px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-movie .description::selection {
+  background: var(--red);
+  color: whitesmoke;
 }
 
 .main-movie .title {
-  margin: 10px 50px;
+  margin-top: 10%;
   font-size: 40px;
 }
 
@@ -97,7 +128,7 @@ header nav a:hover {
   border: none;
   color: var(--black);
   padding: 15px 30px;
-  margin: 0 25px 0 50px;
+  margin-right: 15px;
   font-size: 12px;
 
   cursor: pointer;
@@ -105,18 +136,17 @@ header nav a:hover {
 }
 
 .btn:hover {
-  background-color: rgba(229, 9, 20, 0.8);
+  background-color: rgb(229, 9, 20);
   color: whitesmoke;
 }
 
 .btn i {
   margin-right: 8px;
 }
-
 .btn2 {
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
-  color: rgba(245, 245, 245, 0.76);
+  color: white;
   padding: 15px 30px;
   margin-right: 15px;
   font-size: 12px;
@@ -126,7 +156,7 @@ header nav a:hover {
 }
 
 .btn2:hover {
-  background-color: rgba(245, 245, 245, 0.76);
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -134,143 +164,91 @@ header nav a:hover {
   margin-right: 8px;
 }
 
-.container {
+.banner {
   margin-left: 30px;
 }
 
-.main-movie .container {
+.main-movie .banner {
   width: 50%;
 }
 
-/* .owl-carousel-effect .item {
-  transition: transform 0.2s;
-  padding: 20px 10px 20px 10px;
-}
-.owl-carousel-effect .item:hover {
-  transform: scale(1.1);
-} */
-
-.movie-box {
-  height: 100%;
-  width: 100%;
-  display: block;
+/* Arrows and Main Container */
+.highest-grossing {
+  margin-bottom: 30px;
 }
 
-.movies-carousel {
-  margin-top: 5px;
+.category-title h3 {
+  margin: 20px 0 0 20px;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.item {
-  height: 350px;
+.category-title-disney h3 {
+  margin: 0 0 0 20px;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* .movies-carousel .categories {
-  margin: 15px 0 5px 10px;
-  font-size: 20px;
-}
-
-.movies-carousel .categories2 {
-  margin: 0 0 5px 10px;
-  font-size: 20px;
-} */
-/* FOR THE NEW CAROUSEL */
-.container {
-  width: 90%;
-  margin: auto;
-}
-
-.control-title h3 {
-  color: #fff;
-  font-size: 30px;
-}
-
-.control-title .guides button {
-  background: whitesmoke;
-  height: 3px;
-  width: 10px;
-  cursor: pointer;
-  border: none;
-  margin-right: 2px;
-}
-/*the button will be on JavaScript*/
-.control-title .guides button:hover,
-.control-title .guides button:active {
-  background: var(--black);
-}
-
-/* Title and Control */
-.control-title {
-  display: flex; /*because i want the title on the left and the control on the right */
-  justify-content: space-between;
-  align-items: end; /* the control will be on the bottom */
-}
-
-/* Main container and Arrows */
-.carousel-shows {
-  margin-bottom: 70px;
-}
-
-.carousel-shows .main-container {
+.highest-grossing .main-container {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.carousel-shows .main-container .left-arrow,
-.carousel-shows .main-container .right-arrow {
+.highest-grossing .main-container .left-arrow,
+.highest-grossing .main-container .right-arrow {
   position: absolute;
   border: none;
   background: rgba(0, 0, 0, 0.3);
   font-size: 40px;
-  height: 50%;
-  top: calc(50% - 25%);
+  height: 35%;
   line-height: 40px;
   width: 50px;
   color: #fff;
   cursor: pointer;
-  z-index: 10;
-  transition: 0.2s ease all;
+  z-index: 2;
+  transition: 0.5s ease all;
 }
 
-.carousel-shows .main-container .left-arrow:hover,
-.carousel-shows .main-container .right-arrow:hover {
-  background: rgba(0, 0, 0, 0.9);
+.highest-grossing .main-container .left-arrow:hover,
+.highest-grossing .main-container .right-arrow:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-shows .main-container .left-arrow {
+.highest-grossing .main-container .left-arrow {
   left: 0;
 }
 
-.carousel-shows .main-container .right-arrow {
+.highest-grossing .main-container .right-arrow {
   right: 0;
 }
 
 /* Carousel */
-.carousel-shows .carousel-container {
+.highest-grossing .carousel-container {
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
   overflow: hidden;
-  /*overflow-x: scroll; to see the scrool bar */
   scroll-behavior: smooth;
 }
 
-.carousel-shows .carousel-container .carousel {
+.highest-grossing .carousel-container .carousel {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.carousel-shows .carousel-container .carousel .show {
-  min-width: 19%;
+.highest-grossing .carousel-container .carousel .show img {
+  width: 100%;
+  vertical-align: top;
+  height: 350px;
+}
+
+.highest-grossing .carousel-container .carousel .show {
+  min-width: 20%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.carousel-shows .carousel-container .carousel .show.hover {
+.highest-grossing .carousel-container .carousel .show.hover {
   transform: scale(1.2);
   transform-origin: center;
-}
-
-.carousel-shows .carousel-container .carousel .show img {
-  width: 100%;
-  vertical-align: top;
 }
